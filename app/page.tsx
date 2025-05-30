@@ -67,7 +67,8 @@ export default function BMICalculator() {
 
         {bmi && (
           <Card className="mt-6">
-            <CardHeader></CardHeader>
+            {/* Add text inside CardHeader */}
+            <CardHeader>BMI Result</CardHeader>
             <CardContent>
               <div className="text-center">
                 <div className="text-2xl font-bold">BMI: {bmi}</div>

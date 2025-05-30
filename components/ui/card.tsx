@@ -16,9 +16,16 @@ export function CardHeader({ children }: { children: React.ReactNode }) {
   return <div className="border-b border-gray-200 pb-2 mb-4 font-semibold">{children}</div>;
 }
 
-export function CardContent({ children }: { children: React.ReactNode }) {
-  return <div>{children}</div>;
+export function CardContent({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return <div className={className}>{children}</div>;
 }
+
 
 export function CardFooter({ children }: { children: React.ReactNode }) {
   return <div className="mt-4">{children}</div>;
